@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Payroll</h1>
+    </header>
+    <form id="payrollForm">
+        <label for="name">Employee Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="daysWorked">Days Worked:</label>
+        <input type="number" id="daysWorked" required><br>
+        <label for="dailyRate">Daily Rate:</label>
+        <input type="number" id="dailyRate" required><br>
+        <label for="deduction">Deduction Amount:</label>
+        <input type="number" id="deduction" required><br>
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+    </form>
+    <br>
+    <table id="payrollTable">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Employee Name</th>
+                <th>Days Worked</th>
+                <th>Daily Rate</th>
+                <th>Gross Pay</th>
+                <th>Deduction Amount</th>
+                <th>Net Pay</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    <tbody>
+    </tbody>
+    </table>
+    <nav>
+        <a href="main.html">Home</a>
+    </nav>
+    <script src="ass4.js"></script>
+</body>
+</html>
